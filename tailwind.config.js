@@ -86,6 +86,20 @@ tailwind.config = {
         white: "#FFFFFF",
       },
     },
+    fontFamily: {
+      sans: ["Inter"],
+    },
+    fontSize: {
+      xxxs: "0.625rem",
+      xxs: "0.75rem",
+      xs: "0.875rem",
+      sm: "1rem",
+      default: "1.25rem",
+      lg: "2.125rem",
+      xl: "3rem",
+      xxl: "3.75rem",
+      xxl: "5rem",
+    },
     extend: {},
   },
 };
