@@ -100,6 +100,151 @@ tailwind.config = {
       "2xl": "3.75rem",
       "3xl": "5rem",
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        "heading-1": [
+          "5rem",
+          {
+            fontWeight: "600",
+            lineHeight: "5.25rem",
+            letterSpacing: "-1.5px",
+          },
+        ],
+        "heading-2": [
+          "3.75rem",
+          {
+            fontWeight: "600",
+            lineHeight: "3.75rem",
+            letterSpacing: "-0.5px",
+          },
+        ],
+        "heading-3": [
+          "3rem",
+          {
+            fontWeight: "600",
+            lineHeight: "3.25rem",
+          },
+        ],
+        "heading-4": [
+          "2.125rem",
+          {
+            fontWeight: "600",
+            lineHeight: "2.5rem",
+            letterSpacing: "0.25px",
+          },
+        ],
+        "heading-5": [
+          "1.5rem",
+          {
+            fontWeight: "600",
+            lineHeight: "2rem",
+          },
+        ],
+        "heading-6": [
+          "1.25rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.5rem",
+            letterSpacing: "0.15000000596046448px",
+          },
+        ],
+        "subtitle-1": [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.5rem",
+            letterSpacing: "0.15000000596046448px",
+          },
+        ],
+        "subtitle-2": [
+          "0.875rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.25rem",
+            letterSpacing: "0.10000000149011612px",
+          },
+        ],
+        button: [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.5rem",
+            letterSpacing: "0.5px",
+          },
+        ],
+        "body-1": [
+          "1rem",
+          {
+            fontWeight: "400",
+            lineHeight: "1.5rem",
+            letterSpacing: "0.5px",
+          },
+        ],
+        "body-1-semibold": [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.5rem",
+            letterSpacing: "0.5px",
+          },
+        ],
+        "body-2": [
+          "0.875rem",
+          {
+            fontWeight: "400",
+            lineHeight: "1.25rem",
+            letterSpacing: "0.25px",
+          },
+        ],
+        "body-2-semibold": [
+          "0.875rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.25rem",
+            letterSpacing: "0.25px",
+          },
+        ],
+        link: [
+          "0.875rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1.25rem",
+            letterSpacing: "0.25px",
+          },
+        ],
+        caption: [
+          "0.75rem",
+          {
+            fontWeight: "400",
+            lineHeight: "1rem",
+            letterSpacing: "0.4000000059604645px",
+          },
+        ],
+        "caption-semibold": [
+          "0.75rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1rem",
+            letterSpacing: "0.4000000059604645px",
+          },
+        ],
+        overline: [
+          "0.625rem",
+          {
+            fontWeight: "600",
+            lineHeight: "1rem",
+            letterSpacing: "1.5px",
+          },
+        ],
+        paragraph: [
+          "1.125rem",
+          {
+            fontWeight: "400",
+            lineHeight: "2.25rem",
+            letterSpacing: "0.5px",
+          },
+        ],
+      },
+    },
   },
 };
