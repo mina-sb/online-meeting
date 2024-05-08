@@ -41,12 +41,12 @@ tailwind.config = {
         background: {
           default: "#0B0E15",
           dim: "#000",
-          dim_64: "rgba(0, 0, 0, 0.64)",
+          "dim-64": "rgba(0, 0, 0, 0.64)",
           gradient: "linear-gradient(#000, #FFF)",
         },
         on: {
-          high_emphasis: "#FFF",
-          medium_emphasis: "#C5C6D0",
+          "high-emphasis": "#EFF0FA",
+          "medium-emphasis": "#C5C6D0",
           disabled: "#8F9099",
         },
       },
