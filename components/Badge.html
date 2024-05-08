@@ -3,73 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../index.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../tailwind.config.js"></script>
+    <title>Badge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Badge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .badge {
+          @apply rounded text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1;
+        }
+        .badge.purple {
+          @apply bg-purple;
+        }
+        .badge.primary {
+          @apply bg-primary-base-default;
+        }
+        .badge.secondary {
+          @apply bg-secondary-base-default;
+        }
+        .badge.black {
+          @apply bg-base-black;
+        }
+        .badge img {
+          @apply w-4 h-4;
+        }
+      }
+    </style>
   </head>
   <body class="bg-surface-base-dim">
     <div class="flex flex-col items-center">
       <div class="mt-5 flex gap-5">
-        <span
-          class="rounded bg-purple text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge purple">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
-
-        <span
-          class="rounded-full bg-purple text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge purple rounded-full">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
       </div>
       <div class="mt-5 flex gap-5">
-        <span
-          class="rounded bg-primary-base-default text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge primary">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
-        <span
-          class="rounded-full bg-primary-base-default text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge primary rounded-full">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
       </div>
       <div class="mt-5 flex gap-5">
-        <span
-          class="rounded bg-secondary-base-default text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge secondary">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
-        <span
-          class="rounded-full bg-secondary-base-default text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge secondary rounded-full">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
       </div>
       <div class="mt-5 flex gap-5">
-        <span
-          class="rounded bg-base-black text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge black">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
-        <span
-          class="rounded-full bg-base-black text-overline text-surface-on-high-emphasis py-1 px-2 inline-flex gap-1"
-        >
-          <img src="../assets/Outline/Star-2.svg" class="w-4 h-4" />
+        <span class="badge black rounded-full">
+          <img src="../assets/Outline/Star-2.svg" />
           Moderator
         </span>
       </div>
