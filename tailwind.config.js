@@ -64,6 +64,7 @@ tailwind.config = {
           dim: "#270005",
         },
       },
+      purple: "rgba(126, 71, 235, 1)",
     },
     fontFamily: {
       sans: ["Inter"],
