@@ -15,16 +15,19 @@
     <style type="text/tailwindcss">
       @layer components {
         .button {
-          @apply rounded-lg text-base-white text-button py-2 px-4 box-border border-0 flex items-center;
+          @apply rounded-lg text-base-white text-button py-2 px-4 box-border border-0 flex items-center transition duration-1000 ease-in-out;
         }
         .button.primary {
-          @apply bg-primary-base-default border-primary-base-default;
+          @apply bg-primary-base-default border-primary-base-default hover:bg-primary-base-bright hover:border-primary-base-bright;
         }
         .button.secondary {
-          @apply bg-secondary-base-default border-secondary-base-default;
+          @apply bg-secondary-base-default border-secondary-base-default hover:bg-secondary-base-bright hover:border-secondary-base-bright;
         }
         .button.danger {
-          @apply bg-alert-error-default border-alert-error-default;
+          @apply bg-alert-error-default border-alert-error-default hover:text-alert-error-bright hover:border-alert-error-dim;
+        }
+        .button.danger.dim {
+          @apply hover:bg-alert-error-dim;
         }
         .button.medium {
           @apply h-8;
@@ -33,10 +36,13 @@
           @apply h-7;
         }
         .button.btn-outline {
-          @apply border bg-base-transparent;
+          @apply border bg-base-transparent hover:bg-base-transparent;
         }
-        .button.text-only {
-          @apply border-0;
+        .button.filled-text-only {
+          @apply border-0 bg-base-transparent;
+        }
+        .button.text-only-outline {
+          @apply border-base-transparent bg-base-transparent hover:border;
         }
         .button > span {
           @apply mx-2;
@@ -56,8 +62,18 @@
         <button class="button primary small">Button Text</button>
         <button class="button btn-outline primary medium">Button Text</button>
         <button class="button btn-outline primary small">Button Text</button>
-        <button class="button text-only medium">Button Text</button>
-        <button class="button text-only small">Button Text</button>
+        <button class="button filled-text-only primary medium">
+          Button Text
+        </button>
+        <button class="button filled-text-only primary small">
+          Button Text
+        </button>
+        <button class="button btn-outline text-only-outline primary medium">
+          Button Text
+        </button>
+        <button class="button btn-outline text-only-outline primary small">
+          Button Text
+        </button>
         <button class="button primary medium">
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
@@ -74,11 +90,19 @@
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
         </button>
-        <button class="button medium text-only">
+        <button class="button medium primary filled-text-only">
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
         </button>
-        <button class="button small text-only">
+        <button class="button small primary filled-text-only">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium primary btn-outline text-only-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small primary btn-outline text-only-outline">
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
         </button>
@@ -90,8 +114,18 @@
         <button class="button secondary small">Button Text</button>
         <button class="button btn-outline secondary medium">Button Text</button>
         <button class="button btn-outline secondary small">Button Text</button>
-        <button class="button text-only medium">Button Text</button>
-        <button class="button text-only small">Button Text</button>
+        <button class="button filled-text-only secondary medium">
+          Button Text
+        </button>
+        <button class="button filled-text-only secondary small">
+          Button Text
+        </button>
+        <button class="button btn-outline text-only-outline secondary medium">
+          Button Text
+        </button>
+        <button class="button btn-outline text-only-outline secondary small">
+          Button Text
+        </button>
         <button class="button secondary medium">
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
@@ -108,11 +142,19 @@
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
         </button>
-        <button class="button medium text-only">
+        <button class="button medium secondary filled-text-only">
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
         </button>
-        <button class="button small text-only">
+        <button class="button small secondary filled-text-only">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium secondary btn-outline text-only-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small secondary btn-outline text-only-outline">
           <span>Button Text</span>
           <img src="../assets/Outline/Mic/Mic On.svg" />
         </button>
@@ -121,7 +163,7 @@
         class="flex flex-col items-center gap-5 border-dashed border border-purple p-5"
       >
         <button class="button danger medium">Button Text</button>
-        <button class="button danger small">Button Text</button>
+        <button class="button danger small dim">Button Text</button>
         <button class="button btn-outline danger medium">Button Text</button>
         <button class="button btn-outline danger small">Button Text</button>
         <button class="button danger medium">
