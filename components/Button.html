@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .button {
+          @apply rounded-lg text-base-white text-button py-2 px-4 box-border border-0 flex items-center;
+        }
+        .button.primary {
+          @apply bg-primary-base-default border-primary-base-default;
+        }
+        .button.secondary {
+          @apply bg-secondary-base-default border-secondary-base-default;
+        }
+        .button.danger {
+          @apply bg-alert-error-default border-alert-error-default;
+        }
+        .button.medium {
+          @apply h-8;
+        }
+        .button.small {
+          @apply h-7;
+        }
+        .button.btn-outline {
+          @apply border bg-base-transparent;
+        }
+        .button.text-only {
+          @apply border-0;
+        }
+        .button > span {
+          @apply mx-2;
+        }
+        .button > img {
+          @apply w-5 h-5;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-surface-base-dim">
+    <div class="flex m-5">
+      <div
+        class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple p-5"
+      >
+        <button class="button primary medium">Button Text</button>
+        <button class="button primary small">Button Text</button>
+        <button class="button btn-outline primary medium">Button Text</button>
+        <button class="button btn-outline primary small">Button Text</button>
+        <button class="button text-only medium">Button Text</button>
+        <button class="button text-only small">Button Text</button>
+        <button class="button primary medium">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button primary small">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium primary btn-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small primary btn-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium text-only">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small text-only">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+      </div>
+      <div
+        class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple p-5"
+      >
+        <button class="button secondary medium">Button Text</button>
+        <button class="button secondary small">Button Text</button>
+        <button class="button btn-outline secondary medium">Button Text</button>
+        <button class="button btn-outline secondary small">Button Text</button>
+        <button class="button text-only medium">Button Text</button>
+        <button class="button text-only small">Button Text</button>
+        <button class="button secondary medium">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button secondary small">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium secondary btn-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small secondary btn-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium text-only">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small text-only">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+      </div>
+      <div
+        class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple p-5"
+      >
+        <button class="button danger medium">Button Text</button>
+        <button class="button danger small">Button Text</button>
+        <button class="button btn-outline danger medium">Button Text</button>
+        <button class="button btn-outline danger small">Button Text</button>
+        <button class="button danger medium">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button danger small">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button medium danger btn-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+        <button class="button small danger btn-outline">
+          <span>Button Text</span>
+          <img src="../assets/Outline/Mic/Mic On.svg" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
