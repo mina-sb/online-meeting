@@ -14,8 +14,9 @@ tailwind.config = {
           disabled: "#004299",
         },
         on: {
-          "high-emphasis": "#000",
+          "high-emphasis": "#FFF",
           "medium-emphasis": "#CCDAFF",
+          "low-emphasis": "#84AAFF",
           disabled: "#8F9099",
         },
       },
@@ -27,8 +28,9 @@ tailwind.config = {
           disabled: "#404759",
         },
         on: {
-          "high-emphasis": "#000",
+          "high-emphasis": "#FFF",
           "medium-emphasis": "#D3D9F0",
+          "low-emphasis": "#A4ABC0",
           disabled: "#A4ABC0",
         },
       },
@@ -48,6 +50,7 @@ tailwind.config = {
         on: {
           "high-emphasis": "#EFF0FA",
           "medium-emphasis": "#C5C6D0",
+          "low-emphasis": "#8F9099",
           disabled: "#8F9099",
         },
       },
