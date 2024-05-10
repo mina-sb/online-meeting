@@ -56,8 +56,8 @@
         }
 
         /*LOADING */
-        .button.loading .text,
-        .suffix {
+        .button.loading > .text,
+        .button.loading > .suffix {
           @apply hidden;
         }
         .loading.primary,
@@ -85,10 +85,17 @@
           @apply border-alert-error-dim;
         }
         .primary.focused {
+          @apply hover:bg-primary-base-bright hover:border-primary-base-bright;
           box-shadow: 0px 0px 0px 4px rgba(36, 113, 237, 0.5);
+        }
+        .primary.filled-text-only.focused {
+          @apply hover:bg-base-transparent;
         }
         .secondary.focused {
           box-shadow: 0px 0px 0px 4px rgba(68, 73, 84, 0.5);
+        }
+        .secondary.filled-text-only.focused {
+          @apply hover:bg-base-transparent;
         }
         .danger.focused {
           box-shadow: 0px 0px 0px 4px rgba(204, 82, 95, 0.5);
@@ -977,21 +984,16 @@
           <button class="button filled-text-only primary medium focused">
             <span class="mx-2"> Button Text </span>
           </button>
-          <button
-            class="button filled-text-only primary small focused"
-            disabled
-          >
+          <button class="button filled-text-only primary small focused">
             <span class="mx-2"> Button Text </span>
           </button>
           <button
             class="button btn-outline text-only-outline primary medium focused"
-            disabled
           >
             <span class="mx-2"> Button Text </span>
           </button>
           <button
             class="button btn-outline text-only-outline primary small focused"
-            disabled
           >
             <span class="mx-2"> Button Text </span>
           </button>
@@ -1081,21 +1083,16 @@
           <button class="button filled-text-only secondary medium focused">
             <span class="mx-2"> Button Text </span>
           </button>
-          <button
-            class="button filled-text-only secondary small focused"
-            disabled
-          >
+          <button class="button filled-text-only secondary small focused">
             <span class="mx-2"> Button Text </span>
           </button>
           <button
             class="button btn-outline text-only-outline secondary medium focused"
-            disabled
           >
             <span class="mx-2"> Button Text </span>
           </button>
           <button
             class="button btn-outline text-only-outline secondary small focused"
-            disabled
           >
             <span class="mx-2"> Button Text </span>
           </button>
