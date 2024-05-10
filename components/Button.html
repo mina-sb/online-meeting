@@ -15,8 +15,10 @@
     <style type="text/tailwindcss">
       @layer components {
         .button {
-          @apply  rounded-lg text-button py-2 px-4 box-border border-0 flex justify-center items-center transition duration-1000 ease-in-out;
-         
+          @apply  rounded-lg text-button py-2 px-4 box-border border-0 flex justify-center items-center transition duration-1000 ease-in-out;         
+        }
+         .button img {
+          @apply w-5 h-5;
         }
         .button.primary {
           @apply bg-primary-base-default border-primary-base-default text-primary-on-high-emphasis hover:bg-primary-base-bright hover:border-primary-base-bright
@@ -48,12 +50,26 @@
         }
         .button.text-only-outline {
           @apply border-base-transparent bg-base-transparent hover:border disabled:bg-base-transparent border-0 disabled:text-surface-on-low-emphasis ;
-        }
-        .button img {
-          @apply w-5 h-5;
-        }
+        }       
         .button.danger.small.disabled {
           @apply bg-alert-error-dim text-surface-on-low-emphasis;
+        }
+
+        /*LOADING */
+        .button.loading .text , .suffix{
+           @apply hidden
+        }
+        .loading.primary , .loading.primary.filled-text-only  {
+          @apply bg-primary-base-disabled; 
+        }
+        .loading.primary.btn-outline , .loading.primary.btn-outline.button.text-only-outline  {
+          @apply border-primary-base-disabled; 
+        }
+        .loading.secondary , .loading.secondary.filled-text-only  {
+          @apply bg-secondary-base-dim; 
+        }
+        .loading.secondary.btn-outline , .loading.secondary.btn-outline.button.text-only-outline  {
+          @apply border-secondary-base-dim; 
         }
       }
     </style>
@@ -606,6 +622,674 @@
         </div>
       </div>
     </div>
- 
+  <div class="flex m-2 mt-8">
+      <div class="flex">
+        <div
+          class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple p-5"
+        >
+          <button class="button primary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button primary small loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline primary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline primary small loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button filled-text-only primary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button filled-text-only primary small loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline text-only-outline primary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline text-only-outline primary small loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button primary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />            
+              </span>
+            </span>
+          </button>
+          <button class="button primary small loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">         
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                  </span
+            ></span>
+          </button>
+          <button class="button medium primary btn-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />         
+              </span>
+            </span>
+          </button>
+          <button class="button small primary btn-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button medium primary filled-text-only loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button small primary filled-text-only loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button medium primary btn-outline text-only-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button small primary btn-outline text-only-outline loading">
+             <span class="text mx-2"> Button Text </span>
+             <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple p-5"
+        >
+          <button class="button secondary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button secondary small loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline secondary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline secondary small loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button filled-text-only secondary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button filled-text-only secondary small loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline text-only-outline secondary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline text-only-outline secondary small loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button secondary medium loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />            
+              </span>
+            </span>
+          </button>
+          <button class="button secondary small loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">         
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                  </span
+            ></span>
+          </button>
+          <button class="button medium secondary btn-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />         
+              </span>
+            </span>
+          </button>
+          <button class="button small secondary btn-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button medium secondary filled-text-only loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button small secondary filled-text-only loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button medium secondary btn-outline text-only-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button small secondary btn-outline text-only-outline loading">
+             <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+            <span class="suffix">
+              <span class="icon">
+                    <img src="../assets/Outline/Mic/Mic On.svg" />   
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center gap-5 border-dashed border border-purple p-5"
+        >
+          <button class="button danger medium loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button danger small dim loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline danger medium loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button btn-outline danger small loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button danger medium loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button danger small dim loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button medium danger btn-outline loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+            <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+          <button class="button small danger btn-outline loading">
+            <span class="text mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+             <span class="icon"> 
+              <img src="../assets/Outline/Loader,Spinner.svg" />
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple p-5"
+        >
+          <button class="button medium primary" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button small primary" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button primary btn-outline medium" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button btn-outline primary small" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button filled-text-only primary medium"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button filled-text-only primary small"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button btn-outline text-only-outline primary medium"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button btn-outline text-only-outline primary small"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button primary medium" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button primary small" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                  </span
+            ></span>
+          </button>
+          <button class="button medium primary btn-outline" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button small primary btn-outline" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button
+            class="button medium primary filled-text-only"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button
+            class="button small primary filled-text-only"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button
+            class="button medium primary btn-outline text-only-outline"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button
+            class="button small primary btn-outline text-only-outline"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center gap-5 border-dashed border-l border-t border-b border-purple last:border-r p-5"
+        >
+          <button class="button secondary medium" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button secondary small" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button btn-outline secondary medium" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button btn-outline secondary small" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button filled-text-only secondary medium"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button filled-text-only secondary small"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button btn-outline text-only-outline secondary medium"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button
+            class="button btn-outline text-only-outline secondary small"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button secondary medium" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button secondary small" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button medium secondary btn-outline" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button small secondary btn-outline" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button
+            class="button medium secondary filled-text-only"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button
+            class="button small secondary filled-text-only"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button
+            class="button medium secondary btn-outline text-only-outline"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button
+            class="button small secondary btn-outline text-only-outline"
+            disabled
+          >
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center gap-5 border-dashed border border-purple p-5"
+        >
+          <button class="button danger medium" disabled>
+            <span class="mx-2"> <span class="mx-2"> Button Text </span> 
+          </button>
+          <button class="button danger small dim" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button btn-outline danger medium" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button btn-outline danger small" disabled>
+            <span class="mx-2"> Button Text </span>
+          </button>
+          <button class="button danger medium" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                
+                    <img src="../assets/Outline/Mic/Mic On.svg" />
+                 
+              </span>
+            </span>
+          </button>
+          <button class="button danger small" disabled> 
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button medium danger btn-outline" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+          <button class="button small danger btn-outline" disabled>
+            <span class="mx-2"> Button Text </span>
+            <span class="suffix">
+              <span class="icon">
+                <img src="../assets/Outline/Mic/Mic On.svg" />
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
