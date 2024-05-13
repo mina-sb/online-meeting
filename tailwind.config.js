@@ -232,5 +232,12 @@ tailwind.config = {
       11: "6rem" /* 96px */,
       12: "10rem" /* 160px */,
     },
+    extend: {
+      boxShadow: {
+        primary: "0px 0px 0px 4px rgba(36, 113, 237, 0.5)",
+        secondary: "0px 0px 0px 4px rgba(68, 73, 84, 0.5)",
+        danger: "0px 0px 0px 4px rgba(204, 82, 95, 0.5)",
+      },
+    },
   },
 };
